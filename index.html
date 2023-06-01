@@ -198,34 +198,40 @@
             </div>
         </section>
         <!-- section formulaire  -->
-        <section >
-            <div>
+        <section class="contact" >
+            <div class="form">
                 <h1>PRENONS CONTACT </h1>
                 <form id="formulaire">
-                    <label for="email">Adresse email </label>
-                    <input type="email" name="email" placeholder="Votre adresse mail"><br>
-                    <label for="NEWSLETTER ">NEWSLETTER </label><br>
-                    <label for="case">En cochant cette case vous acceptez de recevoir l’actualité concernant les
+                    <label class="titreform" for="email">Adresse email </label>
+                    <input id="mail" type="email" name="email" placeholder="Votre adresse mail">
+                    <label  class="titreform" for="NEWSLETTER ">NEWSLETTER </label>
+                    <label  for="case">En cochant cette case vous acceptez de recevoir l’actualité concernant les
                         aventures de Batman : </label>
                     <input type="checkbox">
                     <div>
                         <span>Choisissez la fréquence à laquelle vous souhaitez recevoir votre newsletter </span>
-                        <span><img src="./assets/logos/icon_flèche_2.png" alt=""></span>
+                        <span class="icon"><img src="./assets/logos/icon_flèche_2.png" alt=""></span>
                     </div>
                     <div>
-                        <p>Souhaitez-vous recevoir des news </p>
+                        <p class="news">Souhaitez-vous recevoir des news </p>
                     </div>
-                    <a href="">Des films</a>
-                    <a href="">Des comics </a>
-                    <a href="">De tout </a>
-                    <p>MESSAGE</p>
-                    <textarea name="" id="coms" cols="30" rows="1"
+                    <div class="btn-group">
+                        <input type="radio" name="film" id="film">
+                        <label for="desfilms">Des films</label>
+                        <input type="radio" name="film" id="commics">
+                        <label for="commics">Des commics</label>
+                        <input type="radio" name="tous" id="tout">
+                        <label for="tout">De tout</label>
+                    </div>
+                    <p  class="titreform">MESSAGE</p>
+                    <textarea  name="coms" id="coms" cols="30" rows="1"
                         placeholder="Laissez votre commentaire "></textarea><br>
                     <button type="submit">CONFIRMER</button>
                 </form>
             </div>
+        </section>
             <!-- SECTION SITATION -->
-            <section>
+            <section >
                 <div>
                     <div>
                         <img src="./assets/logos/icon_guillemets_1.png" alt="">
@@ -243,7 +249,6 @@
                     </div>
                 </div>
             </section>
-        </section>
     </main>
     <footer>
         <div>
