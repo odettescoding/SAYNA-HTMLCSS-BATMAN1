@@ -632,7 +632,34 @@ right: 0;
     border-bottom: 2px solid rgb(120, 120, 120);
     width: 80%;
 }
-
+::placeholder{
+    color: #0D0E0F;
+    font-size: 15px;
+}
+.btn-group{
+    display: flex;
+    justify-content: space-around;
+    padding: 15px;
+}
+#film,#commic,#tout{
+    opacity: 0;
+}
+.btn-group label{
+    cursor: pointer;
+    border: 2px solid;
+    padding: 10px ;
+    border-image: linear-gradient(69deg,rgb(233, 177, 177),rgb(127, 211, 250))1;
+    font-size: 15px;
+}
+#submit{
+    color:rgb(240, 234, 234);
+    margin: 15px auto;
+    width: 150px;
+    padding: 15px 0;
+    cursor: pointer;
+    display: block;
+    background: linear-gradient(69deg,#f5f4f3, #ca2a35);
+}
 
 
 
