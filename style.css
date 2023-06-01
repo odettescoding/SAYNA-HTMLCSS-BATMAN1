@@ -1,0 +1,606 @@
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&family=Space+Grotesk:wght@300;400;500;600;700&display=swap');
+
+*
+{
+    margin: 0%;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+
+/* mise en forme body*/
+body
+{
+    color: #ffffff;
+    font-family: "Space-Grotesk";
+    font-weight: 300;
+    background: #0D0E0F;
+}
+
+/* Tout les titre */
+h1
+{
+    margin-left: 40px;
+    font-family: "rajdhani";
+    font-weight: 400;
+    font-size: 36px;
+    text-shadow: 1px 1px 1px rgb(235, 169, 169), 2px 2px 1px rgb(238, 1, 1);
+}
+
+/*mise en forme de le section heros*/
+#herosec1
+{
+    width: 100vw;
+    height: 100vh;
+    background-image: url("./assets/illustration/Bathome1.png");
+    background-size: cover;
+    border:2px solid white;
+    background-position: top center;
+    background-repeat: no-repeat;
+}
+
+/*mise en forme de la dection navbar */
+.navbar
+{
+    
+    display: flex;
+    justify-content: space-around;
+    box-sizing: border-box;
+    align-items: center;
+    border: 2px solid wheat;
+    width: 80%;
+    padding: 20px;
+    margin: 0 auto;
+    
+}
+
+/*mise en form de liens*/
+.navbar .nav-link ul
+{
+    display: flex;
+}
+
+.navbar .nav-link ul li
+{
+    margin:   0 25px;
+}
+
+.navbar .nav-link a
+{
+    color: #ffffff;
+    font-family: 'rajdhani';
+    font-weight:500;
+    font-size: 22px;
+    
+}
+
+.navbar .nav-link a:active
+{
+    text-decoration: underline;
+    font-weight: bold;
+}
+.navbar .nav-link a:hover
+{
+    text-decoration: underline;
+    color: rgb(187, 187, 195);
+    cursor: grab;
+    font-family: 'Arial Narrow';
+    font-size: 22px;
+    
+}
+
+/*menu @media query */
+.navbar .menu
+{
+    position: absolute;
+    display: none;
+    top:20px;
+    right: 20px;
+    width: 35px;
+    border-radius: 50%;
+}
+
+/*si la taille de le fenetre est inferieur à 566px */
+@media screen and (max-width :566px)
+{
+    .navbar .menu{
+        display: block;
+    }
+    .nav-link ul{
+        flex-direction: column;
+    }
+    .nav-link {
+        position: absolute;
+        top:10px;
+        right:10px;
+    }
+    
+}
+/* change la couleur de lien à coté */
+
+.logo:hover,#logo:hover,#liencote>img:hover
+{
+    -webkit-filter: invert(4%)sepia(100%)saturate(1600%)hue-rotate(352deg)brightness(100%)contrast(104%);
+    filter:invert(4%)sepia(100%)saturate(1600%)hue-rotate(352deg)brightness(109%)contrast(104%); 
+}
+
+#content
+{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    width: 60%;
+    margin: 0 auto;
+    padding-top: 150px;
+}
+
+#titre
+{
+    margin: 20px 0px;
+}
+
+/*mise en forme de deux lien dous forme de bouton*/
+.bouton
+{
+    padding: 10px 20px;
+    background: radial-gradient(#EDDEBF,transparent);
+    border:1px solid rgb(250, 222, 222);
+    font-size: 22px;
+    font-family: 'rajdhani';
+    font-weight: 400;
+    box-shadow: #0D0E0F 4px 10px 50px;
+    color: #ffffff;
+}
+.bouton a
+{
+    text-decoration: none;
+    color:#ffffff;
+}
+
+#flechsec1
+{
+    width: 20px;
+    height: 20px;
+    display: block;
+    margin: 0 auto;
+}
+/*mise en forme de la section hero*/
+#paragsec1
+{
+    left:35%; 
+    animation: animate 3s ;
+    color: #ffffff;
+    text-align: center;
+}
+
+ /*animation de l'element dans la section heros*/
+@keyframes animate
+{
+    0%{transform: translateX(-100%);}
+    100%{transform: translateX(0%);}
+}
+
+.parag1sec1:nth-child(1)
+{
+    animation-delay: .1s;
+}
+
+#boutsec1 
+{
+    align-items: center;
+    justify-content: space-around; 
+}
+
+/* le font de deux bouton change lors de la passage de la souris */
+.bouton:hover 
+{
+    background: linear-gradient(#eddebf, #890008);    
+}
+
+#flechsec1
+{
+    position: absolute;
+    left:50%;
+    bottom: 0;
+}
+
+#liencote 
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: fixed;
+    right:0;
+    bottom: 0;
+}
+
+#liencote img
+{
+    margin-top: 15px;
+}
+
+/*mise en forme media query */
+@media screen  and (max-width:344px){
+    .logo
+    {
+        width: 20px;
+        height: 18px;
+        position:relative;
+        top:0;
+        left:0;
+        
+    }
+    #liencote
+    {
+        display: inline;
+        justify-content: space-around;
+        width: 12px;
+        height: 10px;
+        position: relative;
+    }
+    #liencote
+    {
+        flex-direction: row;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        display: block;
+        text-align: center;
+    }
+    #paragraphesection1
+    {
+        text-align: center;
+        font-size: small;
+        padding: 15px;
+        text-align: justify;
+        margin-right: 5px;
+    }
+    .bouton
+    {
+        padding: 2px;
+        background: radial-gradient(#eddebf,transparent);
+        border:1px solid rgb(250, 222, 222);
+        font-size: 10px;
+    }
+   
+}
+
+#cinema
+{
+    background-color: #0D0E0F;
+    color: #ffffff;
+    position: relative;
+    width: 100vw;
+
+}
+#paragraph-cinema
+{
+    margin-bottom: 40px;
+    text-align: justify;
+    width: 80%;
+    font-size: 21px;
+    margin: 0 auto;
+}
+
+#blog1
+{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    background: #0D0E0F;
+    border: 2px solid wheat;
+    padding-bottom: 20px ;
+    padding-top: 12px;
+    
+}
+#Bathome2,#Bathome3,#Bathome4
+{
+    display: block;
+    text-align: center;
+    background: #0D0E0F;
+}
+
+#Bathome2:hover,#Bathome3:hover,#Bathome4:hover
+{
+    transform: scale(1.08);
+    margin-top: 30px;
+}
+@media screen and (max-width:378px)
+{
+    #paragraph-cinema
+    {
+        text-align: center;
+        padding: 2px;
+    }
+    #cinema
+    {
+        margin: 0;
+        height: 100%;
+        padding: 20px;
+        width: 80%;
+        align-items: center;
+        
+    }
+    #Bat2,#Bat3,#Bat4
+    {
+        width: 190px;
+        height: 180px;
+        margin: 0;
+    }
+}
+
+/*image batman*/
+#Bat2,#Bat3,#Bat4{
+    width: 80%;
+    margin:0;
+}
+/* mise en form section nemesis*/
+#nemesis
+{
+    padding: 0%;
+    margin: 0%;
+    width: 100%;
+    height: 100%;
+    background-color: #0D0E0F;
+    color: #ffffff;
+    position: relative;
+
+}
+
+/*contenair de la section nemesis*/
+#blog2
+{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background: #0D0E0F;
+    padding-top: 20px;
+    padding-bottom: 40px;
+    border: 2px solid #eddebf;
+}
+
+#logonemesis{
+    
+    width: 25%;
+    padding-left: 10%;
+}
+
+#paragraphnemesis
+{
+    margin-bottom: 40px;
+    text-align: justify;
+    width: 80%;
+    font-size: 21px;
+    margin: 0 auto;
+    font-family:"Space-Grotesk";
+    
+}
+
+/*image batmhome*/
+#Bathome5,#Bathome6,#Bathome7
+{
+    display: block;
+    text-align: center;
+    background: #0D0E0F;
+    margin: 0;
+}
+
+#Bat5,#Bat6,#Bat7
+{
+    width: 80%;
+    margin:0;
+}
+
+/* transformation de l'image lors de passage dela douris*/
+#Bathome5:hover,
+#Bathome6:hover,
+#Bathome7:hover
+{
+    transform: scale(1.08);
+    
+}
+
+#imagenemesisbas
+{position: absolute;
+bottom:0 ;
+right: 0;
+
+}
+
+@media screen and (max-width:378px)
+{
+    #paragraphnemesis
+    {
+        text-align: center;
+        padding: 2px;
+        margin-left: 50px;
+    }
+    #blog2
+    {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        
+    }
+    #nemesis
+    {
+        margin: 0;
+        padding: 0;
+        height: 100%;
+        width: 100%;
+    }
+    #Bat5,#Bat6,#Bat7
+    {
+        width: 190px;
+        height: 180px;
+        margin: 0;
+    }
+    #imagenemesisbas{display: none;}
+}
+
+/* css section allie *::after*/
+#allie
+{
+    background-color: #0D0E0F;
+    color: #ffffff;
+    position: relative;
+   
+
+}
+#p
+{
+    height:230px;
+    width: 320px;
+}
+#paragrapheallie
+{
+    margin-bottom: 40px;
+    text-align: justify;
+    width: 80%;
+    font-size: 21px;
+    margin: 0 auto;
+    font-family:"Space-Grotesk"; 
+    
+}
+
+#blog3
+{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    background: #0D0E0F;
+    border: 2px solid wheat;
+    padding-bottom: 20px ;
+    padding-top: 12px;
+    
+}
+#Bathome8,#Bathome9,#Bathome10
+{
+    display: block;
+    text-align: center;
+    background: #0D0E0F;
+    margin: 0;
+}
+
+#Bathome8:hover,
+#Bathome9:hover,
+#Bathome10:hover
+{
+    
+    transform: scale(1.08);
+    margin-top: 50px;
+}
+#Bat8,#Bat9,#Bat10{
+    width: 80%;
+    margin:0;
+}
+
+/*css de le section justice league*/
+#justiceleague
+{
+    background-color: #0D0E0F;
+    color: #ffffff;
+    position: relative;
+   
+}
+#paragraphjusticeleague
+{
+    margin-bottom: 40px;
+    text-align: justify;
+    width: 80%;
+    font-size: 21px;
+    margin: 0 auto;
+    font-family:"Space-Grotesk"; 
+}
+#blog4
+{
+    width: 80%;
+    margin: 0 auto;
+    align-items: center;
+    height: 100%;
+    margin-bottom: 0%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background: #0D0E0F;
+    border: 2px solid #eddebf;
+}
+
+/* section multimedia*/
+#multimedia
+{
+    background: #000;
+
+}
+
+#infosmultimedia
+{
+    display: flex;
+    width: 80%;
+    align-items: center;
+    margin: 0 auto;
+
+
+}
+
+#descriptionmltimedia
+{
+   background:  radial-gradient(#444444,transparent);
+    padding: 15px;
+}
+
+#paragraphmultimedia
+{
+    font-size: 15px;
+}
+#slidermultimedia
+{
+    display: flex;
+    margin: 40px auto;
+    width: 60%;
+}
+#imagemultimedia
+{
+    width: 80%;
+    margin: 0 auto;
+    align-items: center;
+    display: flex;
+}
+.flechemultimedia
+{
+    background-color: #0D0E0F;
+    border: none;
+}
+#formulaire
+{
+    text-align: center;
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
