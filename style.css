@@ -585,20 +585,53 @@ right: 0;
     background:none;
     
 }
-#formulaire
-{
-    text-align: center;
-    
-}
+
 
 .jaune{
     color:yellow;
 }
 
+/*mise en form de la section formulaire */
+.contact{
+    background:  linear-gradient(#cccaca,transparent);
+    padding: 70px 0;
 
+}
+.contact .form{
+    width: 50%;
+    margin: 0 auto;
+}
+.contact h1{
+    text-align: center;
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 32px;
+}
+#formulaire .titreform{
+    display: block;
+    margin: 25px 0;
+}
+ #mail,#coms{
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    width: 80%;
+    display: block;
+    background:none;
+    border-bottom: 2px solid rgb(120, 120, 120);
+    padding: 10px 0;
 
+}
+.icon img{
+    transform: rotate(90deg);
+    width: 20px;
+}
 
-
+.news{
+    margin: 15px 0;
+    border-bottom: 2px solid rgb(120, 120, 120);
+    width: 80%;
+}
 
 
 
