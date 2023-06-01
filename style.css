@@ -556,8 +556,11 @@ right: 0;
 
 #descriptionmltimedia
 {
-   background:  radial-gradient(#444444,transparent);
+   background:  radial-gradient(#cccaca,transparent);
     padding: 15px;
+    border-top-right-radius: 20px;
+   border-bottom-right-radius: 20px;
+  
 }
 
 #paragraphmultimedia
@@ -579,8 +582,8 @@ right: 0;
 }
 .flechemultimedia
 {
-    background-color: #0D0E0F;
-    border: none;
+    background:none;
+    
 }
 #formulaire
 {
@@ -588,7 +591,9 @@ right: 0;
     
 }
 
-
+.jaune{
+    color:yellow;
+}
 
 
 
