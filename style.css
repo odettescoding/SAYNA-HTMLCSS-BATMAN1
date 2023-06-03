@@ -467,7 +467,9 @@ right: 0;
         height: 180px;
         margin: 0;
     }
-    #imagenemesisbas{display: none;}
+    #imagenemesisbas{
+        display: none;
+    }
 }
 
 /* css section allie *::after*/
