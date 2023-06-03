@@ -613,33 +613,39 @@ right: 0;
 }
 
 
-.jaune{
+.jaune
+{
     color:yellow;
 }
 
 /*mise en form de la section formulaire */
-.contact{
+.contact
+{
     background:  linear-gradient(#636262,transparent);
     padding: 70px 0;
     width: 80%;
     margin: 0 auto;
 
 }
-.contact .form{
+.contact .form
+{
     width: 50%;
     margin: 0 auto;
 }
-.contact h1{
+.contact h1
+{
     text-align: center;
     font-size: 32px;
     font-weight: bold;
     margin-bottom: 32px;
 }
-#formulaire .titreform{
+#formulaire .titreform
+{
     display: block;
     margin: 25px 0;
 }
- #mail,#coms{
+ #mail,#coms
+ {
     border-top: none;
     border-left: none;
     border-right: none;
@@ -650,36 +656,45 @@ right: 0;
     padding: 10px 0;
 
 }
-.icon img{
+.icon img
+{
     transform: rotate(90deg);
     width: 20px;
 }
 
-.news{
+.news
+{
     margin: 15px 0;
     border-bottom: 2px solid rgb(120, 120, 120);
     width: 80%;
 }
-::placeholder{
-    color: #0D0E0F;
+
+/* mise en form deplaceholder*/
+::placeholder
+{
+    color: #d4d9df;
     font-size: 15px;
 }
-.btn-group{
+.btn-group
+{
     display: flex;
     justify-content: space-around;
     padding: 15px;
 }
-#film,#commic,#tout{
+#film,#commic,#tout
+{
     opacity: 0;
 }
-.btn-group label{
+.btn-group label
+{
     cursor: pointer;
     border: 2px solid;
     padding: 10px ;
     border-image: linear-gradient(69deg,rgb(233, 177, 177),rgb(127, 211, 250))1;
     font-size: 15px;
 }
-#submit{
+#submit
+{
     color:rgb(240, 234, 234);
     margin: 15px auto;
     width: 150px;
@@ -688,52 +703,65 @@ right: 0;
     display: block;
     background: linear-gradient(69deg,#f5f4f3, #ca2a35);
 }
+
 /*mise en form de la section citation*/
-.citation{
+.citation
+{
     margin: 90px;
     width: 80%;
     margin: 0 auto;
 }
-.citation-carte{
+.citation-carte
+{
     text-align: center;
     width: 50%;
     margin: 0 auto;
     font-family:"rajdhani";
 }
-#logowb{
+#logowb
+{
     width: 22px;
     height: 20px;
     margin-left: 36px;
 }
-.citationauteur{
+
+/*paragraph auteur*/
+.citationauteur
+{
     font-size:12px;
     padding: 30px;
     font-family:"rajdhani";
 }
-.guillemetclose{
+.guillemetclose
+{
     float:right;
 }
-.text-footer{
+.text-footer
+{
     display: inline-block;
 }
 /*mise en form footer*/
-footer{
+footer
+{
     margin-top: 162px;
     align-items: center;
     width: 80%;
 }
-.text-footer{
+.text-footer
+{
     display:inline-flex;
    margin: 0 16%;
    width: 80%;
    font-family:"rajdhani";
 
 }
-footer .logo{
+footer .logo
+{
     padding:20px;
    
 }
-.socialfooter{
+.socialfooter
+{
     display: flex;
     justify-content: center;
     flex-direction: row;
