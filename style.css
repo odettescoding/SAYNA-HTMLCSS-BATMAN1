@@ -87,7 +87,7 @@ h1
     cursor: grab;
     font-family: 'Arial Narrow';
     font-size: 22px;
-    
+    font-weight: bold;
 }
 
 /*menu @media query */
@@ -152,6 +152,7 @@ h1
     font-weight: 400;
     box-shadow: #0D0E0F 4px 10px 50px;
     color: #ffffff;
+    margin: 0 20px;
 }
 .bouton a
 {
@@ -190,7 +191,7 @@ h1
 #boutsec1 
 {
     align-items: center;
-    justify-content: space-around; 
+    justify-content: space-between; 
 }
 
 /* le font de deux bouton change lors de la passage de la souris */
@@ -660,10 +661,49 @@ right: 0;
     display: block;
     background: linear-gradient(69deg,#f5f4f3, #ca2a35);
 }
+/*mise en form de la section citation*/
+.citation{
+    margin: 90px;
+}
+.citation-carte{
+    text-align: center;
+    width: 50%;
+    margin: 0 auto;
+    font-family:"rajdhani";
+}
+.citationauteur{
+    font-size:12px;
+    padding: 30px;
+    font-family:"rajdhani";
+}
+.guillemetclose{
+    float:right;
+}
+.text-footer{
+    display: inline-block;
+}
+/*mise en form footer*/
+footer{
+    margin-top: 162px;
+    align-items: center;
+}
+.text-footer{
+    display:inline-flex;
+   margin: 0 16%;
+   width: 80%;
+   font-family:"rajdhani";
 
-
-
-
+}
+footer .logo{
+    padding:20px;
+   
+}
+.socialfooter{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    
+}
 
 
 
