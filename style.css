@@ -8,7 +8,32 @@
     list-style: none;
     text-decoration: none;
 }
+.up-bar{
+    width:85%;
+    position:absolute;
+    top:131px;
+    left: 90px;
+    border-top: 1px solid #cccaca;
+}
+.left-bar{
+    position:absolute;
+    float: left;
+    top:130px;
+    left: 90px;
+    height: 100%;
+    width: 1px;
+    border-left: 1px solid #cccaca;
+}
 
+.right-bar{
+    position:absolute;
+    float: right;
+    top:130px;
+    right: 60px;
+    height: 100%;
+    width: 1px;
+    border-left: 1px solid #cccaca;
+}
 /* mise en forme body*/
 body
 {
@@ -21,7 +46,7 @@ body
 /* Tout les titre */
 h1
 {
-    margin-left: 40px;
+    margin-left: 100px;
     font-family: "rajdhani";
     font-weight: 400;
     font-size: 36px;
@@ -35,7 +60,6 @@ h1
     height: 100vh;
     background-image: url("./assets/illustration/Bathome1.png");
     background-size: cover;
-    border:2px solid white;
     background-position: top center;
     background-repeat: no-repeat;
 }
@@ -48,7 +72,6 @@ h1
     justify-content: space-around;
     box-sizing: border-box;
     align-items: center;
-    border: 2px solid wheat;
     width: 80%;
     padding: 20px;
     margin: 0 auto;
@@ -212,8 +235,8 @@ h1
     display: flex;
     flex-direction: column;
     align-items: center;
-    position: fixed;
-    right:0;
+    position: absolute;
+    right:9px;
     bottom: 0;
 }
 
@@ -294,7 +317,7 @@ h1
     align-items: center;
     justify-content: center;
     background: #0D0E0F;
-    border: 2px solid wheat;
+    
     padding-bottom: 20px ;
     padding-top: 12px;
     
@@ -365,7 +388,7 @@ h1
     background: #0D0E0F;
     padding-top: 20px;
     padding-bottom: 40px;
-    border: 2px solid #eddebf;
+   
 }
 
 #logonemesis{
@@ -481,7 +504,7 @@ right: 0;
     align-items: center;
     justify-content: center;
     background: #0D0E0F;
-    border: 2px solid wheat;
+   
     padding-bottom: 20px ;
     padding-top: 12px;
     
@@ -535,13 +558,14 @@ right: 0;
     flex-wrap: wrap;
     justify-content: center;
     background: #0D0E0F;
-    border: 2px solid #eddebf;
+   
 }
 
 /* section multimedia*/
 #multimedia
 {
     background: #000;
+    
 
 }
 
@@ -551,6 +575,7 @@ right: 0;
     width: 80%;
     align-items: center;
     margin: 0 auto;
+  
 
 
 }
@@ -594,8 +619,10 @@ right: 0;
 
 /*mise en form de la section formulaire */
 .contact{
-    background:  linear-gradient(#cccaca,transparent);
+    background:  linear-gradient(#636262,transparent);
     padding: 70px 0;
+    width: 80%;
+    margin: 0 auto;
 
 }
 .contact .form{
@@ -664,12 +691,19 @@ right: 0;
 /*mise en form de la section citation*/
 .citation{
     margin: 90px;
+    width: 80%;
+    margin: 0 auto;
 }
 .citation-carte{
     text-align: center;
     width: 50%;
     margin: 0 auto;
     font-family:"rajdhani";
+}
+#logowb{
+    width: 22px;
+    height: 20px;
+    margin-left: 36px;
 }
 .citationauteur{
     font-size:12px;
@@ -686,6 +720,7 @@ right: 0;
 footer{
     margin-top: 162px;
     align-items: center;
+    width: 80%;
 }
 .text-footer{
     display:inline-flex;
